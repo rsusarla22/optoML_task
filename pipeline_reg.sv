@@ -20,7 +20,7 @@
             data_out <= '0; 
             out_valid <= 0; 
         end else begin  
-        // data transfer when ready & valid are HIGH and set valid for one clock cycle
+        // data transfer when in_ready & in_valid are HIGH and set out_valid for one clock cycle
             if(in_ready && in_valid) begin 
                 data_out <= data_in;
                 out_valid <= 1;
